@@ -22,10 +22,10 @@ class List extends Component {
         </div>
 
         <ul>
-            <li class="disponivel"><i></i> {atividade.name} <a class="liberada" href="javascript:;">disponível</a> <span class="pontos">{atividave.pontuacao}</span></li>
-            <li class="cumprido"><i></i> {atividade.name} <span class="pontos">{atividave.pontuacao}</span></li>
-            <li class="bloqueado"><i></i> {atividade.name} <span class="pontos">{atividave.pontuacao}</span></li>
-            <li class="falhou"><i></i> {atividade.name} <span class="pontos">{atividave.pontuacao}</span></li>
+            <li class="disponivel"><i></i> Desjejum <a class="liberada" href="javascript:;">disponível</a> <span class="pontos">10</span></li>
+            <li class="cumprido"><i></i> Almoço <span class="pontos">10</span></li>
+            <li class="bloqueado"><i></i> Jantar <span class="pontos">10</span></li>
+            <li class="falhou"><i></i> Treino <span class="pontos">10</span></li>
         </ul>
     </div>
     )

@@ -5,7 +5,8 @@ import { Provider } from 'react-redux';
 import { store, persistor } from '../store'
 import { TabBottom } from '../components'
 import { PersistGate } from 'redux-persist/integration/react';
-import Card from '../components/card/index.js';
+import Card from '../components/card/index';
+import List from '../components/list/index';
 import './styles.css';
 class Main extends Component {
   // state = {
@@ -32,9 +33,11 @@ class Main extends Component {
             <div className="card">
               <Card />
             </div>
-            <div>
-
+            <div> 
               <TabBottom />
+            </div>
+            <div>
+              <List/>
             </div>
           </div>
         </PersistGate>
