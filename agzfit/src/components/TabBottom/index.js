@@ -2,14 +2,16 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import FolderIcon from '@material-ui/icons/Folder';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import DynamicFeed from '@material-ui/icons/DynamicFeed';
+import ListAlt from '@material-ui/icons/ListAlt';
+import List from '@material-ui/icons/List';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const useStyles = makeStyles({
     root: {
         width: 500,
+        position: "absolute",
+        bottom: 0
     },
 });
 
@@ -23,10 +25,10 @@ export default function LabelBottomNavigation() {
 
     return (
         <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-            <BottomNavigationAction label="Recents" value="Tafefas" icon={<RestoreIcon />} />
-            <BottomNavigationAction label="Favorites" value="Feed" icon={<FavoriteIcon />} />
-            <BottomNavigationAction label="Nearby" value="Ranking" icon={<LocationOnIcon />} />
-            <BottomNavigationAction label="Folder" value="Regras" icon={<FolderIcon />} />
+            <BottomNavigationAction label="Tarefas" value="Tafefas" icon={<ListAlt />} />
+            <BottomNavigationAction label="Feed" value="Feed" icon={<DynamicFeed />} />
+            <BottomNavigationAction label="Ranking" value="Ranking" icon={<LocationOnIcon />} />
+            <BottomNavigationAction label="Regras" value="Regras" icon={<List />} />
         </BottomNavigation>
     );
 }
