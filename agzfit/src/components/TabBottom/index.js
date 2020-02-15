@@ -9,9 +9,11 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 const useStyles = makeStyles({
     root: {
-        width: 500,
+        width: 780,
         position: "absolute",
-        bottom: 0
+        bottom: 0,
+        background: '#f6f6f6'
+
     },
 });
 
@@ -24,11 +26,13 @@ export default function LabelBottomNavigation() {
     };
 
     return (
+        <div className="tabBottom">
         <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
             <BottomNavigationAction label="Tarefas" value="Tafefas" icon={<ListAlt />} />
             <BottomNavigationAction label="Feed" value="Feed" icon={<DynamicFeed />} />
             <BottomNavigationAction label="Ranking" value="Ranking" icon={<LocationOnIcon />} />
             <BottomNavigationAction label="Regras" value="Regras" icon={<List />} />
         </BottomNavigation>
+        </div>
     );
 }

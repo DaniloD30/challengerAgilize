@@ -26,18 +26,20 @@ class Main extends Component {
     return (
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <div className="divPrincipal">
+          <div className="divPrincipal">  
             <div className="logo">
               <img src={logo} />
             </div>
             <div className="card">
               <Card />
             </div>
-            <div> 
-              <TabBottom />
-            </div>
+           
             <div>
               <List/>
+            </div>
+
+            <div> 
+              <TabBottom />
             </div>
           </div>
         </PersistGate>

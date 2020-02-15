@@ -1,27 +1,53 @@
+.classificacao-temporada{
+  padding: 20px;
+}
+
 .classificacao{
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
 }
 
 .classificacao span.colocacao{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  font-size: 28px;
-  border-radius: 4px;
-  background: green;
-  color: #fff;
-  margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+    border-radius: 4px;
+    background: green;
+    color: #fff;
+    margin-right: 10px;
 }
 
 .classificacao p{
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .classificacao p span.pontuacao{
-  color: green;
-  font-size: 20px;
+    color: green;
+    font-size: 20px;
 }
+
+.temporada-pontos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temporada-pontos h5{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.temporada-pontos p{
+    font-size: 14px;
+}
+
+.temporada-pontos p span{
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+
