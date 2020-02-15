@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../components/card/index.js';
 import './styles.css';
 import logo from '../assets/img/agzfit.png';
 
@@ -18,12 +19,12 @@ class Main extends Component {
 
   render() {
     return (
-      <div>
+      <div className="divPrincipal">
         <div className="logo">
           <img src={logo} />
-        </div>
-        <div>
-          ...    
+      </div>
+        <div className="card">
+          <Card />
         </div>
       </div>
     )

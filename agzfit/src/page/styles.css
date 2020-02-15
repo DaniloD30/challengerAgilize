@@ -1,3 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.divPrincipal{
+  margin: 0 auto;
+  width: 780px;
+  background: #f6f6f6;
+}
+
 .logo{
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+.logo img{
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+

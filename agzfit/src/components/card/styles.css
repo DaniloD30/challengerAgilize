@@ -1,0 +1,27 @@
+.classificacao{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.classificacao span.colocacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  border-radius: 4px;
+  background: green;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.classificacao p{
+  font-size: 16px;
+}
+
+.classificacao p span.pontuacao{
+  color: green;
+  font-size: 20px;
+}

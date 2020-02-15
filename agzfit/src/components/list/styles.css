@@ -1,0 +1,71 @@
+
+.atividades-dia .ponto-dia{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.atividades-dia .ponto-dia h5{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.atividades-dia .ponto-dia h6{
+  font-size: 16px;
+  color: green;
+}
+
+ul{
+  list-style: none;
+  margin-top: 10px;
+}
+
+ul li+li{
+  margin-top: 5px;
+}
+
+ul li{
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 15px;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 16px;
+  position: relative;
+}
+
+ul li a.liberada{
+  cursor: pointer;
+  background: green;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+ul li span.pontos{
+  position: absolute;
+  right: 15px;
+}
+
+ul li.disponivel{
+  background: #fafec1;
+}
+
+ul li.bloqueado{
+  background: #e6e6e6;
+  color: #9d9d9d;
+}
+
+ul li.cumprido{
+  border-color: green;
+  color: green;
+}
+
+ul li.falhou{
+  border-color: red;
+  color: red;
+}
